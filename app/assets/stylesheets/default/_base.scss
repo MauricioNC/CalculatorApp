@@ -1,0 +1,31 @@
+@import 'default/variables';
+
+html, body, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, 
+input, button, li, a, span, p {
+  color: $font-color-white;
+  font-size: $font-size-normal;
+}
+
+input, button, textarea{
+  border: none;
+  outline: none;
+  border: $border-1-dark;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: $bg-color-light_gray;
+  width: 100%;
+  height: 100vh;
+}
+
