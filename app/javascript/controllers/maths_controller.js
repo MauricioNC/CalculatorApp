@@ -1,5 +1,3 @@
-// import maths_operations from "./maths_operations.js"
-
 window.addEventListener('load', e => {
 
   const maths_operations = {

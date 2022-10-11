@@ -22,7 +22,7 @@
   border-radius: 1rem;
 }
 
-.calculator .display{
+.calculator .display {
   background-color: $bg-color-light_gray;
   font-size: $font-size-l;
   color: $font-color-dark_gray;
@@ -30,9 +30,24 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  flex-direction: column;
   height: calc(20rem - 10rem);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+
+  & .result,
+    & .history {
+    width: 100%;
+    text-align: right;
+  }
+  
+  & .result {
+    background-color: crimson;
+  }
+
+  & .history {
+    background-color: cadetblue;
+  }
 }
 
 .calculator .keyboard-grid {
@@ -55,6 +70,7 @@
 
     &:hover {
       filter: brightness(90%) contrast(60%);
+      cursor: default;
     }
   }
 
