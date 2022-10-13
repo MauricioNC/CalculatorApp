@@ -2,19 +2,15 @@ window.addEventListener('load', e => {
 
   const maths_operations = {
     "addition": (data1, data2) => {
-      console.log(`sum: ${data1, data2}`);
       return data1 + data2;
     },
     "substraction": (data1, data2) => {
-      console.log(`sub: ${data1, data2}`);
       return data1 - data2;
     },
     "multiply": (data1, data2) => {
-      console.log(`mult: ${data1, data2}`);
       return data1 * data2;
     },
     "divide": (data1, data2) => {
-      console.log(`div: ${data1, data2}`);
       return data1 / data2;
     },
     "percentage": (data1, data2) => {
@@ -48,17 +44,12 @@ window.addEventListener('load', e => {
         let display_str2 = display.textContent.split(regex2);
 
         num = display_str2.map(item => parseInt(item)).filter(item => !isNaN(item));
-
-        console.log("num: "+num);
         
         display_str = display_str.filter(item => item != "");
         
         symbol = display_str;
         
-        console.log("symbol: " + symbol);
         let result = 0
-
-        console.log(num);
 
         symbol.forEach(element => {
           if(element == "*")
@@ -67,7 +58,6 @@ window.addEventListener('load', e => {
             num.shift();
             num.shift();
             num.splice(0,0,result);
-            console.log(`num: ${num}`);
           }
         })
         symbol.forEach(element => {
@@ -77,7 +67,6 @@ window.addEventListener('load', e => {
             num.shift();
             num.shift();
             num.splice(0,0,result);
-            console.log(`num: ${num}`);
           }
         })
         symbol.forEach(element => {
@@ -87,7 +76,6 @@ window.addEventListener('load', e => {
             num.shift();
             num.shift();
             num.splice(0,0,result);
-            console.log(`num: ${num}`);
           }
         })
         symbol.forEach(element => {
@@ -97,7 +85,6 @@ window.addEventListener('load', e => {
             num.shift();
             num.shift();
             num.splice(0,0,result);
-            console.log(`num: ${num}`);
           }
         })
         symbol.forEach(element => {
@@ -107,7 +94,6 @@ window.addEventListener('load', e => {
             num.shift();
             num.shift();
             num.splice(0,0,result);
-            console.log(`num: ${num}`);
           }
         })
         symbol.forEach(element => {
@@ -117,7 +103,6 @@ window.addEventListener('load', e => {
             num.shift();
             num.shift();
             num.splice(0,0,result);
-            console.log(`num: ${num}`);
           }
         })
         history.textContent = display.textContent;
